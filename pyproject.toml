@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "digital-inclusion-api"
+version = "0.1.0"
+description = "The API for the Digital Inclusion in Detroit project."
+authors = ["mikevatd3 <mike@datadrivendetroit.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12, <=3.13"
+Flask = "^3.0.3"
+SQLAlchemy = "^2.0.31"
+psycopg2-binary = "^2.9.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
