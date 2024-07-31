@@ -1,2 +1,4 @@
 env
 keys.toml
+logs
+__pycache__
