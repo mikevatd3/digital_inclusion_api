@@ -1,9 +1,9 @@
 import logging
-from api.app_logger import setup_logging
 import tomli
 
 from flask import Flask, jsonify, request, abort
 
+from digital_inclusion_api.app_logger import setup_logging
 from digital_inclusion_api.access import InvalidFieldException, ARPASource, ZipCodes
 from digital_inclusion_api.connection import di_engine
 
@@ -28,7 +28,7 @@ zip_codes = ZipCodes(db_source)
 # ---- end
 
 
-@app.route("/api/v1/json/healthcheck")
+@app.route("/healthcheck")
 def healthcheck():
     logger.info("Healthcheck visited.")
     return jsonify({
