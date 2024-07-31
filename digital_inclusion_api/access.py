@@ -46,6 +46,8 @@ class ZipCodes:
     def __init__(self, source: ARPASource) -> None:
         self.source = source
         self.available_fields = {
+            "zipcode",
+            "data_month",
             "claimed_subscribers",
             "claimed_devices",
             "claimed_service_support",
