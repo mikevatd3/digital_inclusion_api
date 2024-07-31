@@ -2,3 +2,6 @@ env
 keys.toml
 logs
 __pycache__
+.venv
+# Handle this with poetry so no commiting!
+requirements.txt

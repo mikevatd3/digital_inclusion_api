@@ -4,8 +4,8 @@ import tomli
 
 from flask import Flask, jsonify, request, abort
 
-from api.access import InvalidFieldException, ARPASource, ZipCodes
-from api.connection import di_engine
+from digital_inclusion_api.access import InvalidFieldException, ARPASource, ZipCodes
+from digital_inclusion_api.connection import di_engine
 
 
 with open("keys.toml", "rb") as f:
