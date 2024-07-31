@@ -70,7 +70,7 @@ def zip_detail(zipcode):
     try:
         with di_engine.connect() as db:
             return jsonify({
-                "geography": zip_codes.get_detail(zip, db, fields)._asdict(),
+                "geography": zip_codes.get_detail(zipcode, db, fields)._asdict(),
                 "metadata": f"/api/v1/json/metadata?fields={request.args.get('fields', '')}"
             })
 
